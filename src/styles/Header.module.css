@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .title {
+    flex-grow: 1;
+    margin-left: 20px;
+    color: white;
+    font-size: large;
+  }
+  
+
+.navList {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.navItem {
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+
+}
+
+  
+  .navItem:hover {
+    color: #4caf50; 
+  }
+  
