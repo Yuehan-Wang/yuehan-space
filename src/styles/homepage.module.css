@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 85vh;
+  }
+  
+  .typing {
+    text-align: center; 
+    border-right: 2px solid;
+    white-space: pre-wrap; 
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  
+
+
+  .profileImage {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 20px; 
+    transition: transform 0.3s ease; 
+  }
+  
+    .profileImage:hover {
+        transform: scale(1.1); 
+    }
+
+  .iconContainer {
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+  }
+
+.iconLink {
+    margin: 0 10px; 
+
+    transition: color 0.3s;
+}
+
+.iconLink:hover {
+    color: #4caf50; 
+}
