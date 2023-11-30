@@ -4,6 +4,9 @@
     background-color: #333;
     color: white;
     padding: 10px 0;
+    z-index: 2;
+    top: 0;
+    padding: 10px 20px;
   }
   
   .title {
@@ -11,6 +14,7 @@
     margin-left: 20px;
     color: white;
     font-size: large;
+    z-index: 2;
   }
   
 
@@ -19,6 +23,7 @@
   display: flex;
   justify-content: flex-end;
   margin-right: 20px;
+  z-index: 2;
 }
 
 .navItem {
@@ -26,11 +31,12 @@
   color: white;
   text-decoration: none;
   transition: color 0.3s;
-
+  z-index: 2;
 }
 
   
   .navItem:hover {
     color: #4caf50; 
+    z-index: 2;
   }
   

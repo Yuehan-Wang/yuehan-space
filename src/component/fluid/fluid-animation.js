@@ -108,19 +108,21 @@ export default class FluidAnimation {
     this._pointers[0].dy = (e.offsetY - this._pointers[0].y) * 10.0
     this._pointers[0].x = e.offsetX
     this._pointers[0].y = e.offsetY
+    this._pointers[0].color = [
+      Math.random() + 0.2,
+      Math.random() - 0.2,
+      Math.random() + 0.2,
+    ]
   }
 
   onMouseDown = (e) => {
     this._pointers[0].down = true
-    this._pointers[0].color = [
-      Math.random() + 0.2,
-      Math.random() + 0.2,
-      Math.random() + 0.2
-    ]
   }
 
+
+
   onMouseUp = (e) => {
-    this._pointers[0].down = false
+    this._pointers[0].down = true
   }
 
   onTouchStart = (e) => {
@@ -128,8 +130,9 @@ export default class FluidAnimation {
       this._pointers[i].down = true
       this._pointers[i].color = [
         Math.random() + 0.2,
+        Math.random() - 0.2,
         Math.random() + 0.2,
-        Math.random() + 0.2
+
       ]
     }
   }
@@ -137,7 +140,7 @@ export default class FluidAnimation {
   onTouchMove = (e) => {
     for (let i = 0; i < e.touches.length; ++i) {
       const touch = e.touches[i]
-      this._pointers[i].moved = this._pointers[i].down
+      this._pointers[i].moved = true
       this._pointers[i].dx = (touch.clientX - this._pointers[i].x) * 10.0
       this._pointers[i].dy = (touch.clientY - this._pointers[i].y) * 10.0
       this._pointers[i].x = touch.clientX
@@ -147,7 +150,7 @@ export default class FluidAnimation {
 
   onTouchEnd = (e) => {
     for (let i = 0; i < e.touches.length; ++i) {
-      this._pointers[i].down = false
+      this._pointers[i].down = true
     }
   }
 
@@ -331,7 +334,7 @@ export default class FluidAnimation {
   }
 
   _getRandomSplat() {
-    const color = [ Math.random() * 10, Math.random() * 10, Math.random() * 10 ]
+    const color = [ Math.random() * 100, Math.random() * 10, Math.random() * 100 ]
     const x = this._canvas.width * Math.random()
     const y = this._canvas.height * Math.random()
     const dx = 1000 * (Math.random() - 0.5)

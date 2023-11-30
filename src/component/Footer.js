@@ -3,7 +3,7 @@ import styles from 'src/styles/Footer.module.css';
 function Footer() {
     return (
         <footer className={styles.footer}>
-            <p className={styles.footerText}>Yuehan's Blog | Produced by Yuehan</p>
+            <p className={styles.footerText}>Made by Yuehan Wang | Next.js Hosted on Vercel</p>
         </footer>
     );
 }

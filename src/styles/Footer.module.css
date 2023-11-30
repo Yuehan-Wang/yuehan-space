@@ -1,5 +1,6 @@
 .footer {
     text-align: center;
+    bottom: 0;
     padding: 10px;
     color: grey;
     font-size: small;
@@ -7,5 +8,5 @@
 
 .footerText {
     margin: 0 10px;
-
+    z-index: 2;
 }
