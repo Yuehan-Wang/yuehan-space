@@ -16,11 +16,9 @@ export default function Header() {
             <Link href="/project" passHref><span>Project</span></Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/contact" passHref><span>Contact</span></Link>
-          </li>
-          <li className={styles.navItem}>
             <Link href="/post" passHref><span>Post</span></Link>
           </li>
+
         </ul>
       </nav>
     </header>

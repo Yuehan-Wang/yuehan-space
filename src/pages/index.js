@@ -15,12 +15,16 @@ export default function Home() {
         let i = -1;
         const typingEffect = setInterval(() => {
             if (i < text.length) {
-                setTyping((prev) => prev + text.charAt(i));
+                try {
+                    setTyping((prev) => prev + text.charAt(i));
+                } catch (error) {
+                    console.error('Error updating typing text:', error);
+                }
                 i++;
             } else {
                 clearInterval(typingEffect);
             }
-        }, 20); 
+        }, 20);
 
         return () => {
             clearInterval(typingEffect); 
