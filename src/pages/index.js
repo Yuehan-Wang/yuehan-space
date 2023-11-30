@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-
+import FluidAnimation from '@/component/fluid';
 export default function Home() {
     const [typing, setTyping] = useState('');
 
@@ -18,15 +18,19 @@ export default function Home() {
             } else {
                 clearInterval(typingEffect);
             }
-        }, 30); 
+        }, 20); 
 
-        return () => clearInterval(typingEffect);
-    }, []);
+        return () => {
+            clearInterval(typingEffect); 
+            setTyping(''); 
+        };
+    }, []); 
 
     return (
         <div className={styles.container}>
+            <FluidAnimation />
            <img src="/profile.jpeg" alt="Yuehan" className={styles.profileImage} />
-            <h2>Yuehan Wang</h2>
+            <h2 className={styles.profileName}>Yuehan Wang</h2>
             <p className={styles.typing}>{typing}</p>
             <div className={styles.iconContainer}>
                     <a href="https://github.com/Yuehan-Wang" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>

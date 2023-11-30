@@ -5,6 +5,12 @@
     align-items: center; 
     min-height: 85vh;
   }
+
+  .profileName {
+    font-size: 2rem; 
+    font-weight: bold;
+    margin: 5px 0; 
+  }
   
   .typing {
     text-align: center; 
