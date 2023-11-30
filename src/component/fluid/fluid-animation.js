@@ -20,8 +20,8 @@ class Pointer {
     this.y = 0
     this.dx = 0
     this.dy = 0
-    this.down = false
-    this.moved = false
+    this.down = true
+    this.moved = true
     this.color = [30, 0, 300]
   }
 }

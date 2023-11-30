@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import FluidAnimation from '@/component/fluid';
+
 export default function Home() {
     const [typing, setTyping] = useState('');
 
@@ -28,23 +29,23 @@ export default function Home() {
 
     return (
         <div className={styles.container}>
-            <FluidAnimation />
-           <img src="/profile.jpeg" alt="Yuehan" className={styles.profileImage} />
+            {/* <FluidAnimation className={styles.FluidAnimation} />  */}
+            <img src="/profile.jpeg" alt="Yuehan" className={styles.profileImage} />
             <h2 className={styles.profileName}>Yuehan Wang</h2>
             <p className={styles.typing}>{typing}</p>
             <div className={styles.iconContainer}>
-                    <a href="https://github.com/Yuehan-Wang" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
-                        <FontAwesomeIcon icon={faGithub} size="2x" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/yuehan-wang-6b7a37162/" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
-                        <FontAwesomeIcon icon={faLinkedin} size="2x" />
-                    </a>
-                    <a href="mailto:yuehan@uchicago.edu" className={styles.iconLink}>
-                        <FontAwesomeIcon icon={faEnvelope} size="2x" />
-                    </a>
-                    <a href="https://www.instagram.com/yuehan1130/" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
-                        <FontAwesomeIcon icon={faInstagram} size="2x" />
-                    </a>
+                <a href="https://github.com/Yuehan-Wang" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
+                    <FontAwesomeIcon icon={faGithub} size="2x" />
+                </a>
+                <a href="https://www.linkedin.com/in/yuehan-wang-6b7a37162/" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
+                    <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                </a>
+                <a href="mailto:yuehan@uchicago.edu" className={styles.iconLink}>
+                    <FontAwesomeIcon icon={faEnvelope} size="2x" />
+                </a>
+                <a href="https://www.instagram.com/yuehan1130/" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
+                    <FontAwesomeIcon icon={faInstagram} size="2x" />
+                </a>
             </div>
         </div>
     )
