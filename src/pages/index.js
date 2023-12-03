@@ -11,7 +11,7 @@ export default function Home() {
         setTyping('');
         console.log('iconContainer styles:', styles.iconContainer);
 
-        const text = 'Hi there, I am a fourth year college student studying CS and Mathematics \n 你好，欢迎光临我的主页！'; 
+        const text = 'Hiiiii there! I am a fourth year college student studying CS and Mathematics \n 你好，欢迎光临我的主页！'; 
         let i = -1;
         const typingEffect = setInterval(() => {
             if (i < text.length) {

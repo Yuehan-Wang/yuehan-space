@@ -1,0 +1,40 @@
+.yearTitle {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 1em;
+  }
+  
+  .postlist {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .postlist li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+  }
+
+  .postlist li a {
+    flex-grow: 1;
+    margin-right: 1em;
+    margin-left: 10rem;
+  }
+
+  .postDate {
+    white-space: nowrap; 
+    margin-right: 10rem;
+  }
+  
+  
+  .postlist a:hover {
+    color: #4caf50;
+  }
+
+  .postDate {
+    float: right;
+    margin-left: 20px; 
+  }
+  
