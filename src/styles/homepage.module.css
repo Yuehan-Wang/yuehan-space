@@ -19,7 +19,7 @@
   font-weight: bold;
   margin: 5px 0; 
   z-index: 2; 
-  color: '#fff';
+  color: "#fff";
 }
 
 .typing {
@@ -29,7 +29,7 @@
   overflow: hidden;
   margin: 10px 0;
   z-index: 2; 
-  color: '#fff';
+  color: "#fff";
 }
 
 
@@ -63,7 +63,7 @@
   display: inline-block;
   transition: color 0.3s;
   z-index: 2;
-  color: '#fff';
+  color: "#fff";
 }
 
 .iconLink:hover {
