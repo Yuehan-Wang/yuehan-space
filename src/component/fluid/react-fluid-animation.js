@@ -23,14 +23,14 @@ class ReactFluidAnimation extends Component {
     style: { }
   }
 
-  componentWillReceiveProps(props) {
-    this._onResize()
+  componentDidUpdate(prevProps) {
+    if (this.props.config !== prevProps.config) {
+      this._onResize();
+    }
 
-    if (props.config) {
-      this._animation.config = {
-        ...props.config,
-        defaultConfig
-      }
+    this._animation.config = {
+      ...this._animation.config,
+      defaultConfig
     }
   }
 
