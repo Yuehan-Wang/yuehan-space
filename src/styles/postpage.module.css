@@ -3,11 +3,13 @@
     margin-top: 2em;
     margin-bottom: 1em;
     font-size: 1em;
+    color: white;
   }
   
   .postlist {
     list-style-type: none;
     padding: 0;
+    color: white;
   }
   
   .postlist li {
@@ -26,6 +28,7 @@
   .postDate {
     white-space: nowrap; 
     margin-right: 10rem;
+    color: white;
   }
   
   

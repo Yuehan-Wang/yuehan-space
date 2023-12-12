@@ -26,7 +26,7 @@ export async function getStaticProps() {
 
 export default function ProjectsPage({ projects }) {
     return (
-      <div>
+      <div className={styles.projectsPage}>
         {projects.map((project) => (
           <div key={project.id} className={styles.projectCard}>
             <Link href={`/project/${project.id}`}>
