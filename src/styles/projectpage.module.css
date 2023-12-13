@@ -37,3 +37,18 @@
     text-align: justify;
   }
   
+  .projectContent {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    color: white;
+  }
+
+  .projectContent h1{
+    font-size: 2em;
+  }
+
+  .projectContent a {
+    color: #007bff; 
+}

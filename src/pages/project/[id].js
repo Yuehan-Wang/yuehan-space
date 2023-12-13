@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import styles from '../../styles/projectpage.module.css';
+import { marked } from 'marked';
 
 const projectsDirectory = 'content/projects';
 
@@ -29,10 +31,12 @@ export async function getStaticProps({ params }) {
 }
 
 export default function ProjectPage({ project }) {
+    const markdownHtml = marked(project.content);
+
     return (
-        <div>
+        <div className={styles.projectContent}>
             <h1>{project.title}</h1>
-            <div dangerouslySetInnerHTML={{ __html: project.content }} />
+            <div dangerouslySetInnerHTML={{ __html: markdownHtml }} />
         </div>
     );
 }
