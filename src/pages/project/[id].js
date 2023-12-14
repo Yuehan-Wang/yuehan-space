@@ -36,7 +36,10 @@ export default function ProjectPage({ project }) {
     return (
         <div className={styles.projectContent}>
             <h1>{project.title}</h1>
+            <div className={styles.markdownContent}>
             <div dangerouslySetInnerHTML={{ __html: markdownHtml }} />
+            </div>
+
         </div>
     );
 }

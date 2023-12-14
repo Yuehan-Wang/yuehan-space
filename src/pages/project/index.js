@@ -32,7 +32,10 @@ export default function ProjectsPage({ projects }) {
             <Link href={`/project/${project.id}`}>
 
                 <h2>{project.title}</h2>
-                <img src={project.imageUrl} alt={project.title} />
+                <div className={styles.imgContainer}>
+                  <img src={project.imageUrl} alt={project.title} />
+                </div>
+                
                 <p>{project.description}</p>
             </Link>
           </div>

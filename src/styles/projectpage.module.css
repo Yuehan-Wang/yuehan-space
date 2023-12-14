@@ -1,5 +1,10 @@
 .projectsPage {
   background-color: black;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  display: grid;
+  justify-content: center;
 }
 .projectCard {
     border: 1px solid #ddd;
@@ -10,6 +15,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
     border-radius: 10px; 
     overflow: hidden; 
+    display: flex;
   }
   
   .projectCard:hover {
@@ -17,21 +23,26 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
+  .imgContainer {
+    height: 70%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 5%;
+  }
   .projectCard img {
-    width: 100%; 
+    width: 100%;
     height: auto;
-    border-radius: 5px; 
-    margin-bottom: 10px; 
   }
   
   .projectCard h2 {
     margin: 10px 0 5px; 
-    color: #333;
+    color: white;
     text-align: center;
+    font-weight: bold;
   }
   
   .projectCard p {
-    color: #666;
+    color: white;
     font-size: 0.9rem; 
     line-height: 1.4; 
     text-align: justify;
@@ -51,4 +62,30 @@
 
   .projectContent a {
     color: #007bff; 
+}
+
+
+.markdownContent {
+  text-align: left;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: white;
+}
+
+.markdownContent p {
+  margin: 1em;
+
+}
+
+.markdownContent h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  color: #007bff;
+}
+
+.markdownContent img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
