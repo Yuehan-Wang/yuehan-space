@@ -9,4 +9,4 @@ The game features GPT-powered characters, each with their own unique personaliti
 The game was developed using Unity, with all the programming done in C#. Our team integrated OpenAI's GPT models with a modified version of the OpenAI Unity open source project to create realistic and dynamic character interactions, giving each virtual character a unique personality.
 
 
-Try out the extension [here](https://chromewebstore.google.com/detail/eljgnoeefifpbmoadimadjfkpcjdieob?hl=en-US&utm_source=ext_sidebar) and give me feedback!
+Try out the game [here](https://fengbojun.itch.io/charmble), enjoy!
