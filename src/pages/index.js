@@ -1,4 +1,4 @@
-import styles from 'src/styles/homepage.module.css';
+import styles from '@/styles/homepage.module.css';
 import { useEffect, useState } from 'react';
 import FluidAnimation from '@/component/fluid/fluid';
 import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from 'react-icons/fa';
