@@ -86,4 +86,4 @@ To fully understand the impact of the "Smart Impulse" update, we must look at tw
 * The **New Algo** achieved a **higher ROI (83.4%)** while keeping that $13,000 in your pocket. You theoretically made the same "quality" of return while maintaining a larger cash safety net for other opportunities.
 
 ### The Verdict
-The updated tool is simply more efficient. By programmatically waiting for better entries on crashing stocks and refusing to sell too early on winning stocks, it generated **4x the excess profit** while actually risking **less of your own money**.
+The updated tool is simply more efficient. By programmatically waiting for better entries on crashing stocks and refusing to sell too early on winning stocks, it generated more profit while actually risking less of your cash.
