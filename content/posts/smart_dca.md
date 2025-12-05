@@ -60,8 +60,8 @@ The script simulates historical trades day-by-day, calculating not just total pr
 
 | Metric | First Iteration (V1) | Current Algorithm (Impulse) | The Difference |
 | :--- | :--- | :--- | :--- |
-| **Alpha (Profit vs Std DCA)** | +5.2% | **+19.6%** | **4x Higher Alpha** 🚀 |
-| **Capital Deployed** | 137.7% | **123.2%** | **More Efficient** 📉 |
+| **Alpha (Profit vs Std DCA)** | +5.2% | **+19.6%** | **4x Higher Alpha**  |
+| **Capital Deployed** | 137.7% | **123.2%** | **More Efficient**  |
 | **Max Drawdown** | -35.1% | -36.4% | Similar Risk |
 | **ROI** | 82.7% | **83.4%** | **Higher Return on Cash** |
 
