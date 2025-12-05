@@ -60,7 +60,7 @@ To fully understand the impact of the "Smart Impulse" update, we must look at tw
 * **Portfolio:** NVDA, PYPL, DIS (2020–Present)
 * **Goal:** Test if the algorithm can handle parabolic rallies (NVDA) and devastating crashes (PYPL).
 
-| Metric | First Iteration (V1) | Current Algorithm (Impulse) | The Verdict |
+| Metric | First Iteration | Current Algorithm | The Verdict |
 | :--- | :--- | :--- | :--- |
 | **Total Return (ROI)** | 230.4% | **244.8%** | **+14.4% Improvement** |
 | **Alpha (vs Std DCA)** | +5.2% | **+19.6%** | **4x Higher Alpha** |
@@ -75,7 +75,7 @@ To fully understand the impact of the "Smart Impulse" update, we must look at tw
 * **Portfolio:** VOO, QQQ (50/50 Split)
 * **Goal:** Test if the algorithm adds value to a standard, reliable index fund portfolio.
 
-| Metric | First Iteration (V1) | Current Algorithm (Impulse) | The Verdict |
+| Metric | First Iteration | Current Algorithm | The Verdict |
 | :--- | :--- | :--- | :--- |
 | **Total Profit ($)** | $225,481 | $216,210 | Slightly lower raw profit |
 | **Cash Invested** | $272,500 | **$259,300** | **Saved ~$13,200 Cash** |
