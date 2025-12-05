@@ -19,8 +19,12 @@ export async function getStaticProps() {
         };
     });
 
+    const visibleProjects = projects.filter(project => project.visible !== false);
+    
+    visibleProjects.sort((a, b) => new Date(b.date) - new Date(a.date));
+
     return {
-        props: { projects },
+        props: { projects: visibleProjects },
     };
 }
 
