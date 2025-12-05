@@ -52,18 +52,38 @@ To fix these issues, we updated the tool's core logic. We added a **"Patience Fi
     * **Blue/Red Bars (Caution):** The momentum is fading or the market is chopping. The tool immediately cuts spending to save cash.
 
 ---
+## 4. Performance Comparison by Scenario
 
-## 4. Does It Actually Work?
-To prove the efficacy of these changes, we ran a "Torture Test" simulation from 2020 to present, using a portfolio that included the exact types of stocks mentioned above (Nvidia, PayPal, Disney, etc.).
+To fully understand the impact of the "Smart Impulse" update, we must look at two different market environments.
 
-### Performance Comparison
+### Scenario A: The "Torture Test" (High Volatility)
+* **Portfolio:** NVDA, PYPL, DIS (2020–Present)
+* **Goal:** Test if the algorithm can handle parabolic rallies (NVDA) and devastating crashes (PYPL).
 
-| Metric | Initial Approach | New "Smart Impulse" | The Difference |
+| Metric | First Iteration (V1) | Current Algorithm (Impulse) | The Verdict |
 | :--- | :--- | :--- | :--- |
-| **Alpha (Profit vs Std DCA)** | +5.2% | **+19.6%** | **4x More Profit** |
-| **Capital Deployed** | 137.7% | **123.2%** | **Uses Less Cash** |
+| **Total Return (ROI)** | 230.4% | **244.8%** | **+14.4% Improvement** |
+| **Alpha (vs Std DCA)** | +5.2% | **+19.6%** | **4x Higher Alpha** |
+| **Capital Deployed** | 137.7% | **123.2%** | **More Efficient** |
 | **Max Drawdown** | -35.1% | -36.4% | Similar Risk |
-| **ROI** | 82.7% | **83.4%** | **Higher Efficiency** |
+
+**Takeaway:** In volatile markets, the new algorithm wins by a landslide. It avoided the "Falling Knife" (PayPal) losses and held the "Rocket Ship" (Nvidia) gains, resulting in significantly higher total returns.
+
+---
+
+### Scenario B: The "Stable Test" (Broad Market)
+* **Portfolio:** VOO, QQQ (50/50 Split)
+* **Goal:** Test if the algorithm adds value to a standard, reliable index fund portfolio.
+
+| Metric | First Iteration (V1) | Current Algorithm (Impulse) | The Verdict |
+| :--- | :--- | :--- | :--- |
+| **Total Profit ($)** | $225,481 | $216,210 | Slightly lower raw profit |
+| **Cash Invested** | $272,500 | **$259,300** | **Saved ~$13,200 Cash** |
+| **ROI (Efficiency)** | 82.7% | **83.4%** | **Higher Return on Cash** |
+
+**Takeaway:** For stable indexes, the new algorithm acts as a **"Cash Saver."**
+* The **Old Algo** forced you to invest an extra $13,000 to squeeze out a bit more raw profit.
+* The **New Algo** achieved a **higher ROI (83.4%)** while keeping that $13,000 in your pocket. You theoretically made the same "quality" of return while maintaining a larger cash safety net for other opportunities.
 
 ### The Verdict
 The updated tool is simply more efficient. By programmatically waiting for better entries on crashing stocks and refusing to sell too early on winning stocks, it generated **4x the excess profit** while actually risking **less of your own money**.
