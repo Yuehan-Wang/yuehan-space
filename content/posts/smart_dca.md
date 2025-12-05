@@ -52,38 +52,45 @@ To fix these issues, we updated the tool's core logic. We added a **"Patience Fi
     * **Blue/Red Bars (Caution):** The momentum is fading or the market is chopping. The tool immediately cuts spending to save cash.
 
 ---
-## 4. Performance Comparison by Scenario
+## 4. The Evolution of Performance
 
-To fully understand the impact of the "Smart Impulse" update, we must look at two different market environments.
+To visualize the impact of our updates, we compared all three stages of the strategy's evolution against our "Torture Test" portfolio (NVDA, PYPL, DIS) from 2020–Present.
 
-### Scenario A: The "Torture Test" (High Volatility)
-* **Portfolio:** NVDA, PYPL, DIS (2020–Present)
-* **Goal:** Test if the algorithm can handle parabolic rallies (NVDA) and devastating crashes (PYPL).
+### The 3-Way Showdown (Torture Test)
 
-| Metric | First Iteration | Current Algorithm | The Verdict |
+| Metric | Standard DCA (Baseline) | Smart DCA (V1) | Smart Impulse (Current) |
 | :--- | :--- | :--- | :--- |
-| **Total Return (ROI)** | 230.4% | **244.8%** | **+14.4% Improvement** |
-| **Alpha (vs Std DCA)** | +5.2% | **+19.6%** | **4x Higher Alpha** |
-| **Capital Deployed** | 137.7% | **123.2%** | **More Efficient** |
-| **Max Drawdown** | -35.1% | -36.4% | Similar Risk |
+| **Total Return (ROI)** | 225.2% | 230.4% | **245.5%** |
+| **Alpha (Excess Return)** | — | +5.2% | **+20.3%** |
+| **Max Drawdown** | -37.7% | **-35.1%** | -37.6% |
+| **Capital Deployed** | 100% | 137.7% | **120.5%** |
 
-**Takeaway:** In volatile markets, the new algorithm wins by a landslide. It avoided the "Falling Knife" (PayPal) losses and held the "Rocket Ship" (Nvidia) gains, resulting in significantly higher total returns.
+### Analysis of the Evolution
+1.  **Standard DCA (The Baseline):**
+    It performed respectably but blindly. It bought PayPal all the way down and Nvidia all the way up without distinction.
+
+2.  **Smart DCA V1 (The "Blunt Instrument"):**
+    * **Result:** It beat the market by **5.2%**, but at a heavy cost.
+    * **The Flaw:** It deployed **137% capital** (aggressive leverage) to achieve that small gain. It was working harder, not smarter.
+
+3.  **Smart Impulse (The Final Form):**
+    * **Result:** It beat the market by **20.3%**—a massive jump in performance.
+    * **The Fix:** Notice the **Capital Deployed dropped to 120%**. By adding the "Falling Knife Guard," the algorithm stopped wasting money on crashing stocks (like PayPal), saving that cash to deploy more effectively into winners.
+    * **Verdict:** It generated **4x the Alpha of V1** while using **significantly less capital**.
 
 ---
 
-### Scenario B: The "Stable Test" (Broad Market)
-* **Portfolio:** VOO, QQQ (50/50 Split)
-* **Goal:** Test if the algorithm adds value to a standard, reliable index fund portfolio.
+### Comparison B: The "Stable" Test (VOO + QQQ)
+*Does it work on boring index funds?*
 
-| Metric | First Iteration | Current Algorithm | The Verdict |
+| Metric | Standard DCA | Smart DCA (V1) | Smart Impulse (Current) |
 | :--- | :--- | :--- | :--- |
-| **Total Profit ($)** | $225,481 | $216,210 | Slightly lower raw profit |
-| **Cash Invested** | $272,500 | **$259,300** | **Saved ~$13,200 Cash** |
-| **ROI (Efficiency)** | 82.7% | **83.4%** | **Higher Return on Cash** |
+| **Total Profit** | $172,128 | **$225,481** | $213,691 |
+| **Cash Invested** | $226,000 | $272,500 | **$255,700** |
+| **ROI (Efficiency)** | 76.1% | 82.7% | **83.6%** |
 
-**Takeaway:** For stable indexes, the new algorithm acts as a **"Cash Saver."**
-* The **Old Algo** forced you to invest an extra $13,000 to squeeze out a bit more raw profit.
-* The **New Algo** achieved a **higher ROI (83.4%)** while keeping that $13,000 in your pocket. You theoretically made the same "quality" of return while maintaining a larger cash safety net for other opportunities.
+**Key Takeaway:**
+While V1 generated the highest *raw dollar* profit, it did so by recklessly spending every dollar it had. The **Current Algorithm (Smart Impulse)** achieved the **highest ROI (83.6%)**, proving it is the most efficient allocator of your wealth.
 
 ### The Verdict
 The updated tool is simply more efficient. By programmatically waiting for better entries on crashing stocks and refusing to sell too early on winning stocks, it generated more profit while actually risking less of your cash.
