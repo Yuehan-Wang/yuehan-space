@@ -1,4 +1,8 @@
-# Project Smart DCA: Systematizing Emotional Discipline
+---
+title: "Smart DCA: Methodology and Results"
+date: "2025-11-05"
+---
+# Smart DCA: Methodology and Results
 
 ## 1. The Core Philosophy
 
