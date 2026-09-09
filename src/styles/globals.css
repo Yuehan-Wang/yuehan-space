@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind v4 uses a single @import instead of the three @tailwind directives from v3. */
+@import "tailwindcss";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,7 +17,5 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(0, 0, 0); 
+  background: rgb(0, 0, 0);
 }
-
-
